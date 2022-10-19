@@ -1,0 +1,106 @@
+@import "./params/mix";
+@import "./header.less";
+@import "./main.less";
+@import "./work.less";
+@import "./courses.less";
+@import "./mentor.less";
+@import "./say.less";
+@import "./footer.less";
+
+body {
+  font-family: "Lato", "san-serif";
+}
+
+h2.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 62px;
+  color: black;
+  text-align: center;
+  .md-block({
+    font-size: 30px;
+    line-height: 30px;
+  });
+}
+
+p.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #555;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 2px;
+  transition: 1s;
+  cursor: pointer;
+  &:hover {
+    color: rgba(8, 108, 249, 1);
+    text-shadow: 1px 0px 2px black;
+  }
+  .md-block({
+    font-size: 20px;
+    line-height: 20px;
+  });
+  .sm-block({
+    font-size: 18px;
+    line-height: 20px;
+  });
+}
+
+.bgBlue {
+  padding: 16px 30px;
+  background-color: rgba(8, 108, 249, 1);
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 4px;
+  &:hover {
+    background-color: black;
+  }
+  .md(text-align, center);
+}
+
+.activeBars {
+  display: none;
+  .md(display , block);
+}
+
+.activeMenuBars {
+  display: block;
+  .md(display , none);
+}
+
+.errorMsg {
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 10px;
+  display: none;
+}
+.activeCourses {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.mt-md-50{
+  .md(margin-top , 50px);
+}
